@@ -7,9 +7,10 @@
      <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <main class="main">
+
     <header class="header-catalog">
-        <a href = 'index.html'><img  class = "logo" src="./img/logo.svg" width="170" height="40" alt="логотип"></a>
+        <div class="main">
+        <a href = 'index.html'><img  class = "logo" src="./img/nerds_logo.png" width="170" height="40" alt="логотип"></a>
         <nav class="menu-index">
           <ul>
             <li class="menu-item"><a href="#">студия</a></li>
@@ -17,17 +18,17 @@
             <li class="menu-item"><a href="#" class="current-menu-item">магазин</a></li>
             <li class="menu-item" ><a href="#"> контакты</a></li>
             <li class="menu-item-cart" ><a href="#">
-                <img  class = "logo" src="./img/cart_icon.png" width="15" height="15" alt="корзина">
-                 корзина</a></li>
+              <img  class = "logo" src="./img/cart-icon.png" width="15" height="15" alt="корзина">
+               корзина</a></li>
           </ul>
         </nav>
 
          <h1 class="shop"> Магазин готовых шаблонов</h1>
-
+       </div>
       </header>
-
+      <div class="main">
       <div class="middle">
-        <section>
+        <section class="middle-section">
           <div class = "background-band">
             <div class = "band">
               <div class ="band-big-round">
@@ -51,7 +52,7 @@
              <input class = "min-max-price-text" type="text" name="min" value="0">
            </label>
            <label >До
-             <input  class = "min-max-price-text-before" type="text" name="max" value="150 000">
+             <input  class = "min-max-price-text" type="text" name="max" value="150 000">
            </label>
          </div>
 
@@ -107,27 +108,34 @@
        <div  class="sort">
         СОРТИРОВАТЬ:
         <div class="sort-by">
-              <ul class ="sort-by-item-up-down" >
-                   <li>&#9650;</li>
-                  <li >&#9660;</li>
-              </ul>
+
               <ul class ="sort-by-item">
-                <li><a href="#">По названию</a></li>
-                <li><a href="#">По типу</a></li>
-                <li>По цене</li>
+                <li class="sort-by-item-next"><a href="#">По цене</a></li>
+                <li class="sort-by-item-next"><a href="#">По типу</a></li>
+                <li class="sort-by-item-current">По названию</li>
               </ul>
         </div>
-       </div>
+        <br class="clear" />
+        <ul class ="sort-by-item-up-down" >
+          <li>&#9660;</li>
+             <li>&#9650;</li>
+
+
+        </ul>
+         </div>
        <div class="img-website">
+
           <uL class="img-screen-website">
             <li><p class = "round-screen">  </p>
-    <img src="img/sedona.png" alt="Скриншот сайта Sedona"  width="359" height="578" >
-              <div class="info-img">
+
+    <img src="img/img-sedona.png" alt="Скриншот сайта Sedona"  width="359" height="578" >
+            <div class="info-img">
               <div class="block-info-img">
                 <a href="#">
                   <h3>Sedona</h3>
                 </a>
-                <p>Информационный сайт для туристов</p>
+                <p class="sedona">Информационный сайт
+  для туристов</p>
                 <a class="button-price" href="#">9 900 руб.</a>
               </div>
               </div>
@@ -140,10 +148,10 @@
     <div class="block-info-img">
       <a href="#">
 
-          <h3>Pink</h3>
+          <h3>Pink APP</h3>
             </a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button-price" href="#">9 900 руб.</a>
     </div>
     </div></li>
 
@@ -151,26 +159,26 @@
              <br class="clear">
           <uL class="img-screen-website">
             <li><p class = "round-screen"></p>
-    <img src="img/barbershop.png" alt="Скриншот сайта Barbershop" width="359" height="578">
+    <img src="img/img-barbershop.png" alt="Скриншот сайта Barbershop" width="359" height="578">
               <div class="info-img">
               <div class="block-info-img">
                 <a href="#">
                   <h3>Barbershop</h3>
               </a>
               <p>Сайт салоны красоты. Для мужчин, да.</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button-price" href="#">9 900 руб.</a>
               </div>
               </div></li>
 
               <li><p class = "round-screen">  </p>
-    <img src="img/mishka.png" alt="Скриншот сайта MISHKA"  width="359" height="578">
+    <img src="img/img-mishka.png" alt="Скриншот сайта MISHKA"  width="359" height="578">
                 <div class="info-img">
                 <div class="block-info-img">
                   <a href="#">
                     <h3>MISHKA</h3>
                 </a>
                 <p>Интернет-магазин вязаных игрушек</p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button-price" href="#">9 900 руб.</a>
                 </div>
                 </div></li>
 
@@ -178,29 +186,29 @@
              <br class="clear">
           <uL class="img-screen-website">
             <li><p class = "round-screen"></p>
-    <img src="img/aplus.png" alt="Скриншот сайта A Plus"  width="359" height="578">
+    <img src="img/img.aplus.png" alt="Скриншот сайта A Plus"  width="359" height="578">
               <div class="info-img">
               <div class="block-info-img">
                 <a href="#">
                   <h3>A Plus</h3>
               </a>
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button-price" href="#">9 900 руб.</a>
               </div>
               </div></li>
 
               <li><p class = "round-screen">  </p>
-    <img src="img/kvast.png" alt="Скриншот сайта КВАСТ" width="359" height="578">
+    <img src="img/img-kvast.png" alt="Скриншот сайта КВАСТ" width="359" height="578">
                 <div class="info-img">
                 <div class="block-info-img">
                   <a href="#">
                     <h3>КВАСТ</h3>
                 </a>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button-price" href="#">9 900 руб.</a>
                 </div>
-                </div>
-              </li>
+                </div></li>
+
           </uL>
        </div>
        <br class="clear"/>
@@ -216,73 +224,92 @@
 
 
       </div>
-      <footer class="contacts">
-        <section class="adress">
-          <img src="img/map.png"
-            alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440"
-            height="416">
-            <div class="metka">
-              <img  src="img/metka.png" alt="metka" width="231" height="190"/>
-          </div>
-          <div class = "nerds">
-            <div>
-              <b>NЁRDS DESIGN STUDIO</b>
-              <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
-              <p class = "tel">тел. <a  href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-              <a class="write-us button" href="#modal_open">Напишите нам</a>
-            </div>
-          </div>
-          <div id="modal_open" class="background-modal">
-            <!-- само модальное окно -->
-    <div class="modal-content">
-      <!-- инфо в окне -->
-        <div class = "window">
-            Напишите нам
-  <br class="clear"/>
+    </div>
+    <footer>
+
+
+      <section class="adress">
+
+        <img src="img/map.png"
+          alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440"
+          height="416">
+        <div class="main">
+          <div class="metka">
+          <img  src="img/metka.png" alt="metka" width="231" height="190"/>
+        </div>
+        <div class = "nerds">
+          <div>
+            <b>NЁRDS DESIGN STUDIO</b>
+            <p>наб. Реки Карповки,
+5 лит П, Санкт-Петербург</p>
+            <p class = "tel"><a  href="tel:+78122757575">+7 800 555-86-28</a></p>
+            <a class="write-us button" href="#modal_open">Напишите нам</a>
+</div>
+</div>
+  <!-- окно -->
+  <!-- модальное окно -->
+    <!-- задний план модального окна -->
+
+            <div id="modal_open" class="background-modal">
+              <!-- само модальное окно -->
+      <div class="modal-content">
+        <!-- инфо в окне -->
+          <div class = "window">
+              Напишите нам
+    <br class="clear"/>
+         <div class="sending-form">
+         <label class="data" for="login">Ваше имя:</label>
+         <input autocapitalize="off"  name="login" id="login" placeholder="Представьтесь, пожалуйста" required>
+       </div>
        <div class="sending-form">
-       <label class="data" for="login">Ваше имя:</label>
-       <input autocapitalize="off"  name="login" id="login" placeholder="Представьтесь, пожалуйста" required>
-     </div>
-     <div class="sending-form">
-       <label class="data" for="email">Ваш e-mail:</label>
-       <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
-     </div>
-     <div class="data-text-email">
-   <br class="clear"/>
-       <label  for="feedback-textarea">Текст письма:</label>
-   <br class="clear"/>
-       <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
-     </div>
-     <div >
-       <button class="button-send"  type="button">Отправить</button>
-       <button class="button-send" type="button">Отмена</button>
-     </div>
-        <a href="#"  title="Закрыть модальное окно" class="close">×</a>
+         <label class="data" for="email">Ваш e-mail:</label>
+         <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+       </div>
+       <div class="data-text-email">
+     <br class="clear"/>
+         <label  for="feedback-textarea">Текст письма:</label>
+     <br class="clear"/>
+         <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
+       </div>
+       <div >
+         <button class="button-send"  type="button">Отправить</button>
+       </div>
+          <a href="#"  title="Закрыть модальное окно" class="close">×</a>
+        </div>
+        </div>
+        </div>
       </div>
+          <!--  -->
+      </section>
+
+         <div class="main">
+
+      <div class="footer-website">
+
+        <ul class = "icons">
+          <li>
+              <a href="#" class="footer-btn footer-btn-vk">
+                <img src="./img/vk.svg" alt="vk_icon" width="81" height="81"></a>
+          </li>
+          <li>
+            <a href="#" class="footer-btn footer-btn-facebook">
+            <img src="./img/facebook.png" alt="facebook_icon" width="81" height="81"></a>
+          </li>
+          <li>
+            <a href="#" class="footer-btn footer-btn-inst">
+              <img src="./img/instagram.png" alt="instagram_icon" width="81" height="81"></a>
+          </li>
+        </ul>
+        <div class="footer-right-column">
+          <h2 class="title">Давайте дружить, это выгодно!</h2>
+          <p class="info">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+
       </div>
-      </div>
-        </section>
-        <section class="footer-website">
-          <ul class = "icons">
-            <li>
-                <a href="#" class="footer-btn footer-btn-vk">
-                  <img src="./img/vk.svg" alt="vk_icon" width="81" height="81"></a>
-            </li>
-            <li>
-              <a href="#" class="footer-btn footer-btn-facebook">
-              <img src="./img/facebook.png" alt="facebook_icon" width="81" height="81"></a>
-            </li>
-            <li>
-              <a href="#" class="footer-btn footer-btn-inst">
-                <img src="./img/instagram.png" alt="instagram_icon" width="81" height="81"></a>
-            </li>
-          </ul>
-          <div class="footer-right-column">
-            <h2 class="title">Давайте дружить, это выгодно!</h2>
-            <p class="info">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
-        </section>
-      </footer>
-    </main>
+
+
+    </div>
+       </footer>
+
   </body>
 </html>
